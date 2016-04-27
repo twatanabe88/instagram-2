@@ -37,8 +37,6 @@ class PostTableViewCell: UITableViewCell {
     @IBAction func commentButton(sender: AnyObject) {
         let ud = NSUserDefaults.standardUserDefaults()
         let name = ud.objectForKey(CommonConst.DisplayNameKey) as! String
-       
-
         commentLabel.text = "comment: \(commentField!.text!)"
         nameLabel.text = "name: \(name)"
         
